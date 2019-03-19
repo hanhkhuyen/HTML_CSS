@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            color: #111111;
+            margin: 0;
+        }
+        .header{
+            position: relative;
+            background: green;
+        }
+        .menu{
+            width: fit-content;
+            margin: 0 auto;
+        }
+        .header .menu ol{
+            padding: 0;
+            margin: 0;
+        }
+        .header .menu ol li{
+            display: inline-block;
+            list-style-type: none;
+            cursor: pointer;
+            padding: 15px 10px;
+            margin-left: -5px;
+        }
+        .header .menu ol li:hover,
+        .active{
+            color: green;
+            background: white;
+        }
+        .header .menu ol li:first-child{
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <ol>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Documents</li>
+                <li>Help</li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    <script>
+        var eles = document.getElementsByTagName("li");
+        for(var i in eles){
+            eles[i].onclick = function(){
+                var tmp = document.getElementsByTagName("li");
+                for(var j in tmp) {
+                    tmp[j].classList = []
+                }
+                this.classList.add("active"); 
+            }
+        }
+    </script>
+</body>
+
+</html>

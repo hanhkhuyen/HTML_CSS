@@ -1,0 +1,36 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    background-image: url(./hinh1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background: .4;
+}
+#login_form span{
+    display: inline-grid;
+    /* display: block; */
+}
+.login_form-content{
+    width: fit-content;
+    margin: auto;
+    margin-top: 40vh;
+}
+.login_form-content input{
+    width: 250px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+button{
+    float: right;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid green;
+    color: green;
+}
+button:hover{
+    background: green;
+    color: white;
+}
